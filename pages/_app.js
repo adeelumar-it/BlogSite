@@ -6,9 +6,7 @@ function MyApp({ Component, pageProps }) {
     <ThemeProvider attribute="class">
 
       <Component {...pageProps} />
-      {/* <UserInfoProvider>
-      <Component {...pageProps} />
-    </UserInfoProvider> */}
+   
     </ThemeProvider>
   );
 }

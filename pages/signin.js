@@ -58,14 +58,7 @@ function LoginPage() {
   return (
     <div>
 
-    {/* <div>
     
-    <button className=" hover:bg-blue-700 hover:text-white font-bold py-2 px-2 ml-3 rounded">
-                 <Link href='/'>
-                   <CloseRoundedIcon />Cancel
-                 </Link>
-               </button>
-    </div> */}
     
     
         <div className="min-h-screen flex items-center justify-center" style={{    background: "#f6f1f1f" }}>

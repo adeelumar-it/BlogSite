@@ -40,7 +40,7 @@ function BlogArticle() {
  
     return (
         <>   <div className="flex flex-col md:flex-row p-6 bg-gray-100">
-            {/* Left Column for Blog Article 1 */}
+           
           <div className="md:max-w-4xl md:w-4/5 p-6 bg-white md:mr-6 md:mb-0 mb-4">
   
                 {allPosts.map(item => (
@@ -70,7 +70,6 @@ function BlogArticle() {
 
             </div>
 
-            {/* Right Column for Blog Article 2 */}
             <div className="md:max-w-lg md:w-1/5 p-6 bg-white shadow-md md:mb-0 hidden md:block  ">
 
                 {allPosts.map(item => (
@@ -84,8 +83,7 @@ function BlogArticle() {
                             <h1 className="text-2xl font-bold mb-4">{item.blogtitle}</h1>
 
                             <p className="text-gray-700" id='blogdiscription'>
-                                {/* Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum */}
-                                {item.blogdescription}
+                               {item.blogdescription}
 
                             </p>
                         </CardContent>

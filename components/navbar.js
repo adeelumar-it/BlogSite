@@ -70,7 +70,7 @@ if(userInfo?.data){
   return (
     <div className="w-full">
       <nav className="container relative flex flex-wrap items-center justify-between p-8 mx-auto lg:justify-between xl:px-0">
-        {/* Logo  */}
+       
         <Disclosure>
           {({ open }) => (
             <>
@@ -115,31 +115,13 @@ if(userInfo?.data){
 
                 <Disclosure.Panel className="flex flex-wrap w-full my-5 lg:hidden">
                   <>
-                    {/* <Link href="/" className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 dark:focus:bg-gray-800 focus:outline-none">
-                      Product
-
-                    </Link>
-                    <Link href="/" className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 dark:focus:bg-gray-800 focus:outline-none">
-
-
-                      Blog
-
-                    </Link> */}
+                 
                     <Link href="/" className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 dark:focus:bg-gray-800 focus:outline-none">
                       Write <ModeOutlinedIcon/>
                     </Link>
 
 
-                   
-                    {/* <Link href="/" className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md lg:ml-5">         
-                        Get Started
-                    </Link> */}
-                    {/* <Link href="/edditor" className="w-full text-center px-6 py-2 text-white bg-indigo-600 rounded-md md:ml-5">
-                      New Post
-                    </Link> */}
-                    {/* <Link href="/signup" className=" w-full text-center mt-3 px-6 py-2 text-white bg-indigo-600 rounded-md md:ml-5">
-                      SignUp
-                    </Link> */}
+                  
                     {userInfo?.data ? 
                     <Link href={""} onClick={Logout} className=" w-full text-center mt-3 px-6 py-2 text-white bg-indigo-600 rounded-md md:ml-5">
                       Logout
@@ -154,17 +136,12 @@ if(userInfo?.data){
           )}
         </Disclosure>
 
-        {/* menu  */}
+      
         <div className="hidden text-center lg:flex lg:items-center">
           <ul className="items-center justify-end flex-1 pt-6 list-none lg:pt-0 lg:flex">
             
               <li className="mr-3 nav__item">
-                {/* <Link href="/" className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-gray-800">
-                  Product
-                </Link>
-                 <Link href="/" className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-gray-800">
-                  Blog
-                </Link> */}
+                
                  <Link href="" onClick={edditorClikc} className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-gray-800">
                   Write<ModeOutlinedIcon/>
                 </Link>
@@ -174,14 +151,7 @@ if(userInfo?.data){
         </div>
 
         <div className="hidden mr-3 space-x-4 lg:flex nav__item">
-          {/* <Link  className="px-6 py-2 text-white bg-indigo-600 rounded-md md:ml-5">
-            New Post
-          </Link> */}
-          {/* <Link href="/signup" className="px-6 py-2 text-white bg-indigo-600 rounded-md md:ml-5">
-            SignUp
-          </Link> */}
-          {/* working */}
-
+          
  {userInfo?.data ?
           <Link href={""} onClick={Logout} className="px-6 py-2 text-white bg-indigo-600 rounded-md md:ml-5">
           Logout
@@ -222,7 +192,7 @@ if(userInfo?.data){
         <MenuItem onClick={handleLogout}>Logout</MenuItem>
       </Menu>
    
-          {/* <ThemeChanger /> */}
+         
         </div>
       </nav>
     </div>
