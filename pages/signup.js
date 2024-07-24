@@ -32,7 +32,7 @@ const SignupForm = () => {
       return;
     }
 
-    axios.post('http://localhost:3000/api/user', formData)
+    axios.post('https://blog-site1122.vercel.app/api/user', formData)
       .then(response => {
         console.log('Response:', response.data);
         router.push('/signin');

@@ -78,7 +78,7 @@ export default function CustomizedDividers() {
     };
   
     try {
-      const response = await axios.post('http://localhost:3000/api/createPost', object);
+      const response = await axios.post('https://blog-site1122.vercel.app/api/createPost', object);
       console.log('Response:', response.data);
       router.push('/');
     } catch (error) {

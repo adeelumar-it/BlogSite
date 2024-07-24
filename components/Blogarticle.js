@@ -8,7 +8,7 @@ function BlogArticle() {
 
     useEffect(() => {
         // Fetch all posts when the component mounts
-        axios.get('http://localhost:3000/api/GetAllPosts')
+        axios.get('https://blog-site1122.vercel.app/api/GetAllPosts')
             .then(response => {
                 setAllPosts(response.data);
             })

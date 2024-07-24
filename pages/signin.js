@@ -33,7 +33,7 @@ function LoginPage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:3000/api/login', formData);
+      const response = await axios.post('https://blog-site1122.vercel.app/api/login', formData);
       console.log('Response:', response.data);
   
       window.localStorage.setItem('loginInfo', JSON.stringify(response.data));
