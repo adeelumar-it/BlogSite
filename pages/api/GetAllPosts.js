@@ -1,5 +1,5 @@
 import connectDB from './db';
-import BlogPost from '../Models/BlogPost'; // Ensure the correct path
+import BlogPost from '../BlogPost'; // Ensure the correct path
 
 export default async function handler(req, res) {
   try {

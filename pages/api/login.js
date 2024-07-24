@@ -1,7 +1,7 @@
 // pages/api/login.js
 
 import connectDB from './db'; // Ensure this path is correct
-import User from '../Models/user'; // Ensure this path is correct
+import User from '../user'; // Ensure this path is correct
 import bcrypt from 'bcryptjs';
 
 export default async function handler(req, res) {

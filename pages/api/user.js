@@ -1,6 +1,6 @@
 
 import connectDB from './db';
-import User from '../Models/user';
+import User from '../user';
 
 export default async function handler(req, res) {
   await connectDB();
